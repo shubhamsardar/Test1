@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.tripin1.test1.MainActivity">
+    tools:context="com.tripin.truckpartner.test1.com.example.tripin.MainActivity">
 
 
     <Button
@@ -13,4 +13,33 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="Click ME!" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:text="Remote Cognfig Value" />
+
+    <TextView
+        android:id="@+id/textViewValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="0."
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewtimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="87dp"
+        android:textSize="30sp" />
+
 </RelativeLayout>

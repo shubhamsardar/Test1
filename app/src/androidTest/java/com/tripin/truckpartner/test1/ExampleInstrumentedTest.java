@@ -1,4 +1,4 @@
-package com.example.tripin1.test1;
+package com.tripin.truckpartner.test1;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
