@@ -22,25 +22,25 @@ public class FMSclass extends FirebaseMessagingService {
         //Toast.makeText(getApplicationContext(),"recived",Toast.LENGTH_LONG).show();
 
 
-        Log.d(TAG, "From: " + remoteMessage.getFrom());
+        Log.d("FCM,,,,", "From: " + remoteMessage.getFrom());
 
         // Check if message contains a data payload.
         if (remoteMessage.getData().size() > 0) {
-            Log.d(TAG, "Message data payload: " + remoteMessage.getData());
+            Log.d("Daata ", "Message data payload: " + remoteMessage.getData());
 
             if (/* Check if data needs to be processed by long running job */ true) {
                 // For long-running tasks (10 seconds or more) use Firebase Job Dispatcher.
-                scheduleJob();
+                //scheduleJob();
             } else {
                 // Handle message within 10 seconds
-                handleNow();
+              //  handleNow();
             }
 
         }
 
         // Check if message contains a notification payload.
         if (remoteMessage.getNotification() != null) {
-            Log.d(TAG, "Message Notification Body: " + remoteMessage.getNotification().getBody());
+            Log.d("FCM body", "Message Notification Body: " + remoteMessage.getNotification().getBody());
         }
 
         // Also if you intend on generating your own notifications as a result of a received FCM
