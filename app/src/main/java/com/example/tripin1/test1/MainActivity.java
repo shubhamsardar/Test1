@@ -13,15 +13,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);;;
+        setContentView(R.layout.activity_main);
 
         b1 = (Button)findViewById(R.id.button);
 
 
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext()," Hellow ", Toast.LENGTH_LONG).show();
-            }
-        
+
+
     }
+}
